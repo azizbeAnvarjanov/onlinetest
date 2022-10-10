@@ -1,0 +1,280 @@
+.savollar
+{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* savollar_qollanma ========================= */
+
+.savollar_qollanma
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: .9s;
+    background: #fff;
+    transition: .7s cubic-bezier(0.68,0,0.265,1.25);
+}
+
+
+
+.savollar_qollanma p
+{
+    width: 70%;
+    font-weight: 600;
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+
+.savollar_qollanma button
+{
+    background: red;
+    outline: none;
+    border: none;
+    color: #fff;
+    border-radius: 50px;
+    padding: 7px 20px;
+}
+
+.qollanma_active
+{
+    left: -100%;
+}
+
+
+
+
+
+/* savollar_qoidasi ========================= */
+
+
+
+/* testlar ========================= */
+
+.testlar
+{
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    overflow-y: auto;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    transition: .9s cubic-bezier(0.68,0,0.265,1.25);
+}
+
+.testlar_active_1
+{   
+    left: 0 !important;
+}
+
+.testlar_active_2
+{   
+    left: -100% !important;
+}
+
+.question
+{
+    margin-bottom: 50px;
+}
+
+.answers
+{
+    display: flex;
+    align-items: center;
+}
+
+.answer_v
+{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+.answer_v input
+{
+    margin-right: 5px;
+    cursor: pointer;
+}
+.answer_v label
+{
+    cursor: pointer;
+}
+
+.finish_btn
+{
+    background: red;
+    border: none;
+    outline: none;
+    padding: 7px 20px;
+    color: #fff;
+    border-radius: 50px;
+}
+
+
+
+/* testlar ========================= */
+
+
+
+/* forma ========================= */
+
+.forma
+{
+    width: 30%;
+    height: 80vh;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    position: absolute;
+    left: 200%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    transition: .9s cubic-bezier(0.68,0,0.265,1.25);
+}
+
+.forma_active_1
+{
+    left: 50% !important;
+}
+
+
+
+.forma h5
+{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.forma input
+{
+    padding: 5px 15px;
+    margin-bottom: 15px;
+    border: 2px solid rgb(158, 149, 149);
+    border-radius: 50px;
+    outline: none;
+}
+
+.forma input::placeholder
+{
+    font-size: .9em;
+}
+
+.forma label
+{
+    font-weight: 600;
+    padding-left: 10px;
+    padding-bottom: 6px;
+}
+
+.forma button
+{
+    padding: 7px 20px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    outline: none;
+    background: red;
+    color: #fff;
+    margin-top: 40px;
+    font-weight: 600;
+    transition: .5s;
+}
+
+
+.forma button:hover
+{
+    border: 2px solid red;
+    background: #fff;
+    color: red;
+}
+
+
+
+
+/* forma ========================= */
+
+
+
+/* popup ========================= */
+
+
+.popup
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    background: rgba(3, 3, 3, 0.473);
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.popup.active
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup_message
+{
+    width: 50%;
+    height: 70%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(17, 206, 17);
+    border-radius: 10px;
+    transition: .3s cubic-bezier(0.68,0,0.265,1.25);
+    transform: scale(0);
+}
+
+.popup.active .popup_message
+{
+    transform: scale(1);
+}
+
+.popup_message svg
+{
+    font-size: 8em;
+}
+
+.popup_message h4
+{
+    margin: 50px 0;
+}
+
+.popup_message a
+{
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    padding: 7px 40px;
+    background: rgb(17, 206, 17);
+    color: #fff;
+}
+
+
+
+/* popup ========================= */

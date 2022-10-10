@@ -1,0 +1,41 @@
+.start
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin,
+.student
+{
+    width: 30%;
+    height: 50vh;
+    margin: 0 20px;
+    box-shadow: 0 0 10px rgba(250, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: red;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+
+
+.admin svg,
+.student svg
+{
+    font-size: 5em;
+    margin-bottom: 20px;
+}
+
+
+.admin:hover,
+.student:hover
+{
+    background: red;
+    color: #fff;
+}
