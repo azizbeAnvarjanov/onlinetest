@@ -221,12 +221,12 @@
     top: 0;
     width: 100%;
     height: 100%;
-    border: 1px solid #000;
     background: rgba(3, 3, 3, 0.473);
     display: grid;
     place-items: center;
     opacity: 0;
     visibility: hidden;
+    text-align: center;
 }
 
 .popup.active
@@ -278,3 +278,96 @@
 
 
 /* popup ========================= */
+
+
+
+
+@media screen and (max-width: 950px) {
+    .forma
+    {
+        width: 60%;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 400px) {
+    .forma
+    {
+        width: 92%;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 870px) {
+    .savollar_qollanma p
+    {
+        font-size: .9em;
+        width: 100%;
+        margin: 10px 0 20px 0;
+        text-align: left;
+    }
+
+    .savollar_qollanma
+    {
+        align-items:flex-start;
+    }
+
+    .savollar_qollanma h3
+    {
+        text-align: left;
+    }
+
+
+
+    .popup_message
+    {
+        width: 60%;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 600px) {
+    .forma
+    {
+        width: 80%;
+    }
+
+    .popup_message
+    {
+        width: 90% !important;
+    }
+}   
+
+
+@media screen and (max-width: 400px) {
+    .testlar
+    {
+        padding: 20px;
+    }
+
+    .question h2
+    {
+        font-size: 1em;
+    }
+
+    .answers
+    {
+
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column !important;
+    }
+}
+

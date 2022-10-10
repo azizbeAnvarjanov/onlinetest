@@ -144,3 +144,68 @@
 
 
 /* result box ======================================= */
+
+
+
+
+
+
+
+@media screen and (max-width: 870px) {
+    .password_box
+    {
+        width: 60%;
+    }
+
+    .result_box
+    {
+        width: 100%;
+        overflow-x: auto;
+    }
+    
+    .table
+    {
+        width: 900px !important;
+        border: 1px solid #000!important;
+    }
+}
+
+
+
+@media screen and (max-width: 670px) {
+    .password_box
+    {
+        width: 80%;
+    }
+
+    .compile_students
+    {
+        flex-direction: column;
+    }
+
+    .compile_students h4
+    {
+        font-size: 1em;
+    }
+    .search-input
+    {
+        width: 100%!important;
+        margin-left: 0!important;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 470px) {
+    .password_box
+    {
+        width: 93%;
+    }
+
+    .parol_input
+    {
+        width: 100% !important;
+    }
+}
