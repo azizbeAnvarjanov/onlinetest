@@ -73,14 +73,31 @@ function Student() {
   });
 
 
+  function validation() {
+    let input = document.querySelectorAll('.forma_input');
+    input.forEach((el) => {
+      if (el.value === "") {
+        document.querySelector('.error_alert').classList.add('active');
+        setTimeout(() => {
+          document.querySelector('.error_alert').classList.remove('active');
+        }, 2000);
+      }else{
+        document.querySelector('.error_alert').classList.remove('active');
+        PostData();
+        show_popup();
+      }
+    })
+  }
 
 
   const PostData = async () => {
+
 
     details.ball = correctAnswers
 
     const { name, lname, number, ball } = details;
 
+    
 
     const res = await fetch(
       "https://test-pr-7d46d-default-rtdb.firebaseio.com/tests.json",
@@ -149,7 +166,7 @@ function Student() {
           
         <div className="forma">
           <h5>Ism familiyangizni yozib qoldiring</h5>
-
+          <p className='error_alert'>Iltimos qatorlarni hammasini to'ldiring</p>
           <label>Ism</label>
           <input 
           className='forma_input' 
@@ -176,8 +193,7 @@ function Student() {
 
 
           <button onClick={() => {
-          show_popup();
-          PostData();
+          validation();
           }}>Jo'natish</button>
         </div>
 

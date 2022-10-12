@@ -140,6 +140,16 @@
     border-radius: 6px;
 }
 
+.find_active_error
+{
+    display: none !important;
+}
+
+.find_active_noError
+{
+    display: table-row !important;
+}
+
 
 
 
@@ -166,7 +176,6 @@
     .table
     {
         width: 900px !important;
-        border: 1px solid #000!important;
     }
 }
 
